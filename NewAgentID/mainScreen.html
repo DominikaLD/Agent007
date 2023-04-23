@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script/mainScreen.js" defer></script>
+    <link rel="stylesheet" href="./styles/mainScreen.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <button class="btn" id="logout">Log out</button>
+    <main>
+      <img src="./logo1.png" class="logo" />
+      <section class="single_section">
+        <div class="input_container">
+          <label>Bond, where are you going?</label>
+          <input id="country_input" value="Poland" />
+        </div>
+        <button class="btn" id="country_btn">Check data</button>
+        <p>Country:<span id="country_name"></span></p>
+        <p>Population:<span id="country_population"></span></p>
+        <p>Capital:<span id="country_capital"></span></p>
+        <div id="map"></div>
+      </section>
+      <section class="single_section">
+        <h2>New identity of Bond</h2>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/147/147144.png"
+          class="avatar"
+          id="new_picture"
+        />
+        <p>Name: <span id="new_name"></span></p>
+        <p>Email: <span id="new_email"></span></p>
+        <p>Date of brith: <span id="new_dob"></span></p>
+        <button class="btn" id="generate_identity">Generate!</button>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+body {
+  background-image: url("../background.jpg");
+  background-position: center;
+  background-size: cover;
+  color: ghostwhite;
+}
+
+#logout {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+main {
+  text-align: center;
+}
+.single_section {
+  background-color: rgba(0, 128, 0, 0.323);
+  padding: 12px;
+  margin-bottom: 30px;
+}
+#map {
+  height: 300px;
+  width: 500px;
+  margin: 0 auto;
+}
+.avatar {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
